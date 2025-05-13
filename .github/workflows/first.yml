@@ -10,13 +10,13 @@ jobs:
       - name: step1
         run:  date
   job2:
-    name: First job
+    name: Second job
     runs-on: windows-latest
     steps:
       - name: step1
         run:  date
   job3:
-    name: First job
+    name: third job
     runs-on: macos-latest
     steps:
       - name: step1
@@ -24,7 +24,7 @@ jobs:
   job4:
     needs:
       [job1, job2, job3]
-    name: First job
+    name: fourth job
     runs-on: windows-latest
     steps:
       - name: step1
