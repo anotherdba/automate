@@ -48,7 +48,9 @@ jobs:
         name: linux
 
     - name: Test ${{ env.FILE_NAME }}
-      run: source ./test.sh
+      run: |
+        chmod +x ./test.sh
+        source ./test.sh
 
   test-windows:
     name: Test Windows
