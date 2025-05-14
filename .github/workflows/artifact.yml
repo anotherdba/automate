@@ -1,6 +1,7 @@
 name: artifact
 
-on: [push]
+on: 
+  workflow_dispatch:
 
 env:
   FILE_NAME: hello-server
