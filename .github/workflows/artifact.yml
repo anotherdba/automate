@@ -49,8 +49,8 @@ jobs:
 
     - name: Test ${{ env.FILE_NAME }}
       run: |
-        chmod +x ./test.sh
-        source ./test.sh
+        chmod +x ./../test.sh
+        source ./../test.sh
 
   test-windows:
     name: Test Windows
@@ -68,4 +68,4 @@ jobs:
         name: windows
         
     - name: Test ${{ env.FILE_NAME }}
-      run: windows/${{ env.FILE_NAME }}.exe
+      run: d:\a\automate\automate\${{ env.FILE_NAME }}.exe
