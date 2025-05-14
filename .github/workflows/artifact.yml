@@ -60,7 +60,7 @@ jobs:
 
     - name: Check out code
       uses: actions/checkout@v4
-    - run: ls -la
+    - run: dir
   
     - name: Download artifact
       uses: actions/download-artifact@v4.0.0
