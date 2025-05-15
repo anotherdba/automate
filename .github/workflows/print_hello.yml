@@ -16,6 +16,7 @@ jobs:
         run: |
          python ./hello.py
   build:
+    needs: [print]
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
